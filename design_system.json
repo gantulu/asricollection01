@@ -1,28 +1,42 @@
 {
-    "name": "ASRI COLLECTION Design System",
-    "file": "design_system.json",
-    "version": "1.0.0",
-    "status": "draft",
-    "product": "ASRI COLLECTION",
-    "type": "ecommerce_storefront",
-    "platform": ["web", "mobile", "tablet", "desktop"],
-    "framework": ["React", "TypeScript", "Vite"],
-    "principles": [
-      "mobile_first",
-      "responsive",
-      "minimal_modern",
-      "reusable_components",
-      "accessible",
-      "performance_aware",
-      "guest_checkout",
-      "backend_driven_state"
-    ],
-    "scope": "Customer-facing storefront only. No admin dashboard, login page, or registration page.",
-    "source_requirements": "ASRI COLLECTION — PAGE REQUIREMENTS V1.0"
-  },
+  "name": "ASRI COLLECTION Design System",
+  "file": "design_system.json",
+  "version": "1.1.0",
+  "status": "draft",
+  "product": "ASRI COLLECTION",
+  "type": "ecommerce_storefront",
+  "platform": [
+    "web",
+    "mobile",
+    "tablet",
+    "desktop"
+  ],
+  "framework": [
+    "React",
+    "TypeScript",
+    "Vite"
+  ],
+  "principles": [
+    "mobile_first",
+    "responsive",
+    "minimal_modern",
+    "reusable_components",
+    "accessible",
+    "performance_aware",
+    "guest_checkout",
+    "backend_driven_state"
+  ],
+  "scope": "Customer-facing storefront only. No admin dashboard, login page, or registration page.",
+  "source_requirements": "ASRI COLLECTION — PAGE REQUIREMENTS V1.0",
   "brand": {
     "name": "ASRI COLLECTION",
-    "personality": ["modern", "minimal", "elegant", "approachable", "reliable"],
+    "personality": [
+      "modern",
+      "minimal",
+      "elegant",
+      "approachable",
+      "reliable"
+    ],
     "visual_direction": "Modern minimalist ecommerce storefront with generous whitespace, clear product photography, restrained emerald accents, dark typography, and high-contrast purchase actions.",
     "logo": {
       "placement": "header",
@@ -34,73 +48,96 @@
   },
   "design_tokens": {
     "color": {
-      "brand": {
-        "primary": "#16803D",
-        "primary_hover": "#116B32",
-        "primary_pressed": "#0D5728",
-        "primary_soft": "#EAF5EE",
-        "secondary": "#F15A24",
-        "secondary_soft": "#FFF0E9"
-      },
-      "neutral": {
-        "white": "#FFFFFF",
-        "black": "#111111",
-        "gray_950": "#171717",
-        "gray_900": "#262626",
-        "gray_800": "#404040",
-        "gray_700": "#525252",
-        "gray_600": "#737373",
-        "gray_500": "#8A8A8A",
-        "gray_400": "#A3A3A3",
-        "gray_300": "#D4D4D4",
-        "gray_200": "#E5E5E5",
-        "gray_100": "#F5F5F5",
-        "gray_50": "#FAFAFA"
+      "primitive": {
+        "brand": {
+          "emerald_800": "#116B32",
+          "emerald_700": "#0D5728",
+          "emerald_600": "#16803D",
+          "emerald_500": "#1B9148",
+          "emerald_50": "#EAF5EE"
+        },
+        "orange": {
+          "50": "#FFF0E9",
+          "500": "#F15A24"
+        },
+        "neutral": {
+          "white": "#FFFFFF",
+          "black": "#111111",
+          "gray_950": "#171717",
+          "gray_900": "#262626",
+          "gray_800": "#404040",
+          "gray_700": "#525252",
+          "gray_600": "#737373",
+          "gray_500": "#8A8A8A",
+          "gray_400": "#A3A3A3",
+          "gray_300": "#D4D4D4",
+          "gray_200": "#E5E5E5",
+          "gray_100": "#F5F5F5",
+          "gray_50": "#FAFAFA"
+        }
       },
       "semantic": {
-        "success": "#16803D",
-        "success_background": "#EAF5EE",
-        "warning": "#B7791F",
-        "warning_background": "#FFF7E6",
-        "error": "#D92D20",
-        "error_background": "#FEF0EF",
-        "info": "#2563EB",
-        "info_background": "#EFF6FF"
+        "text": {
+          "primary": "#171717",
+          "secondary": "#525252",
+          "muted": "#737373",
+          "inverse": "#FFFFFF",
+          "disabled": "#737373",
+          "link": "#16803D"
+        },
+        "surface": {
+          "page": "#FFFFFF",
+          "default": "#FFFFFF",
+          "subtle": "#FAFAFA",
+          "muted": "#F5F5F5",
+          "raised": "#FFFFFF",
+          "overlay": "rgba(17, 17, 17, 0.48)",
+          "disabled": "#F5F5F5"
+        },
+        "border": {
+          "default": "1px solid #E5E5E5",
+          "strong": "1px solid #D4D4D4",
+          "focus": "2px solid #16803D",
+          "error": "1px solid #D92D20",
+          "disabled": "1px solid #E5E5E5"
+        },
+        "action": {
+          "primary": "#16803D",
+          "primary_hover": "#116B32",
+          "primary_pressed": "#0D5728",
+          "secondary": "#FFFFFF",
+          "danger": "#D92D20"
+        },
+        "status": {
+          "success": {
+            "foreground": "#16803D",
+            "background": "#EAF5EE"
+          },
+          "warning": {
+            "foreground": "#754500",
+            "background": "#FFF7E6"
+          },
+          "error": {
+            "foreground": "#B42318",
+            "background": "#FEF0EF"
+          },
+          "info": {
+            "foreground": "#1D4ED8",
+            "background": "#EFF6FF"
+          }
+        }
       },
-      "text": {
-        "primary": "#171717",
-        "secondary": "#525252",
-        "muted": "#737373",
-        "inverse": "#FFFFFF",
-        "link": "#16803D",
-        "disabled": "#A3A3A3"
-      },
-      "surface": {
-        "page": "#FFFFFF",
-        "default": "#FFFFFF",
-        "subtle": "#FAFAFA",
-        "muted": "#F5F5F5",
-        "raised": "#FFFFFF",
-        "overlay": "rgba(17, 17, 17, 0.48)"
-      },
-      "border": {
-        "default": "#E5E5E5",
-        "strong": "#D4D4D4",
-        "focus": "#16803D",
-        "error": "#D92D20"
-      },
-      "usage_rules": [
-        "Use primary emerald for primary actions, selected states, links, and key brand accents.",
-        "Use secondary orange sparingly for promotional emphasis and campaign highlights.",
-        "Use neutral colors for most surfaces, typography, separators, and product layouts.",
-        "Do not use color alone to communicate status; pair color with text or an icon.",
-        "Maintain WCAG AA contrast for normal text and interactive controls."
+      "rules": [
+        "Components must reference semantic tokens instead of hardcoded color values.",
+        "Primitive tokens are used only to define semantic tokens.",
+        "Do not communicate status through color alone.",
+        "Maintain WCAG 2.2 AA contrast for applicable text and interactive controls.",
+        "V1 supports light mode only; dark mode is deferred."
       ]
     },
     "typography": {
       "font_family": {
-        "sans": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
-        "display": "Inter, ui-sans-serif, system-ui, sans-serif"
+        "sans": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
       },
       "weights": {
         "regular": 400,
@@ -109,21 +146,73 @@
         "bold": 700
       },
       "scale": {
-        "display": {"font_size": "32px", "line_height": 1.2, "weight": 700},
-        "h1": {"font_size": "28px", "line_height": 1.25, "weight": 700},
-        "h2": {"font_size": "24px", "line_height": 1.3, "weight": 600},
-        "h3": {"font_size": "20px", "line_height": 1.35, "weight": 600},
-        "h4": {"font_size": "18px", "line_height": 1.4, "weight": 600},
-        "body_lg": {"font_size": "16px", "line_height": 1.5, "weight": 400},
-        "body": {"font_size": "14px", "line_height": 1.5, "weight": 400},
-        "body_sm": {"font_size": "13px", "line_height": 1.45, "weight": 400},
-        "caption": {"font_size": "12px", "line_height": 1.4, "weight": 400},
-        "overline": {"font_size": "11px", "line_height": 1.35, "weight": 600, "letter_spacing": "0.06em"}
+        "display": {
+          "font_size": "32px",
+          "line_height": 1.2,
+          "weight": 700
+        },
+        "h1": {
+          "font_size": "28px",
+          "line_height": 1.25,
+          "weight": 700
+        },
+        "h2": {
+          "font_size": "24px",
+          "line_height": 1.3,
+          "weight": 600
+        },
+        "h3": {
+          "font_size": "20px",
+          "line_height": 1.35,
+          "weight": 600
+        },
+        "h4": {
+          "font_size": "18px",
+          "line_height": 1.4,
+          "weight": 600
+        },
+        "body_lg": {
+          "font_size": "16px",
+          "line_height": 1.5,
+          "weight": 400
+        },
+        "body": {
+          "font_size": "14px",
+          "line_height": 1.5,
+          "weight": 400
+        },
+        "body_sm": {
+          "font_size": "13px",
+          "line_height": 1.45,
+          "weight": 400
+        },
+        "label": {
+          "font_size": "14px",
+          "line_height": 1.4,
+          "weight": 500
+        },
+        "price": {
+          "font_size": "16px",
+          "line_height": 1.4,
+          "weight": 700,
+          "font_variant_numeric": "tabular-nums"
+        },
+        "caption": {
+          "font_size": "12px",
+          "line_height": 1.4,
+          "weight": 400
+        },
+        "overline": {
+          "font_size": "11px",
+          "line_height": 1.35,
+          "weight": 600,
+          "letter_spacing": "0.06em"
+        }
       },
       "rules": [
         "Use sentence case for labels and headings.",
         "Use tabular numerals for prices, quantities, and order identifiers where supported.",
-        "Keep product names readable and clamp card titles consistently.",
+        "Clamp product names consistently.",
         "Avoid using more than three text sizes within a compact component."
       ]
     },
@@ -153,7 +242,9 @@
         "tablet": "32px",
         "desktop": "40px"
       },
-      "component_gap": "8px"
+      "component_gap": "8px",
+      "form_field_gap": "16px",
+      "inline_gap": "8px"
     },
     "sizing": {
       "control_height": {
@@ -161,6 +252,7 @@
         "md": "44px",
         "lg": "52px"
       },
+      "interactive_target_minimum": "44px",
       "icon_size": {
         "xs": "14px",
         "sm": "16px",
@@ -170,8 +262,7 @@
       },
       "content_max_width": "1200px",
       "product_image_aspect_ratio": "1:1",
-      "hero_aspect_ratio": "16:9",
-      "touch_target_minimum": "44px"
+      "hero_aspect_ratio": "16:9"
     },
     "radius": {
       "none": "0px",
@@ -186,8 +277,7 @@
     "border": {
       "width": "1px",
       "style": "solid",
-      "default": "1px solid #E5E5E5",
-      "focus": "2px solid #16803D"
+      "focus_offset": "2px"
     },
     "shadow": {
       "none": "none",
@@ -201,21 +291,24 @@
       "duration_normal": "200ms",
       "duration_slow": "300ms",
       "easing_standard": "cubic-bezier(0.2, 0, 0, 1)",
+      "reduced_motion": "disable_nonessential_motion",
       "rules": [
-        "Prefer subtle transitions for hover, focus, drawer, modal, and toast.",
+        "Prefer subtle transitions.",
         "Respect prefers-reduced-motion.",
-        "Do not animate layout changes that delay checkout or purchase actions."
+        "Do not delay checkout or purchase actions with animation."
       ]
     },
     "z_index": {
       "base": 0,
       "sticky": 10,
       "header": 20,
+      "popover": 30,
       "drawer_backdrop": 40,
       "drawer": 50,
       "modal_backdrop": 60,
       "modal": 70,
-      "toast": 80
+      "toast": 80,
+      "tooltip": 90
     }
   },
   "responsive": {
@@ -233,7 +326,7 @@
         "product_grid_columns": 2,
         "content_width": "100%",
         "navigation": "compact_header_and_contextual_navigation",
-        "sticky_purchase_bar": True
+        "sticky_purchase_bar": true
       },
       "tablet": {
         "page_gutter": "24px",
@@ -259,11 +352,18 @@
   "layout": {
     "app_shell": {
       "header": {
-        "height": {"mobile": "56px", "desktop": "68px"},
+        "height": {
+          "mobile": "56px",
+          "desktop": "68px"
+        },
         "position": "sticky",
         "background": "#FFFFFF",
         "border_bottom": "1px solid #E5E5E5",
-        "elements": ["AppLogo", "CartBtn", "ProfileBtn"],
+        "elements": [
+          "AppLogo",
+          "CartBtn",
+          "ProfileBtn"
+        ],
         "rules": [
           "Keep the logo visually dominant but compact.",
           "CartBtn displays a count badge when cart quantity is greater than zero.",
@@ -278,7 +378,12 @@
       },
       "footer": {
         "background": "#FAFAFA",
-        "sections": ["store_information", "help_links", "policies", "social_links"]
+        "sections": [
+          "store_information",
+          "help_links",
+          "policies",
+          "social_links"
+        ]
       }
     },
     "page_templates": {
@@ -291,7 +396,7 @@
       "standalone": {
         "header": "contextual_page_header",
         "main": "standalone_content",
-        "show_back_button": True,
+        "show_back_button": true,
         "content_width": "responsive"
       },
       "supporting": {
@@ -307,193 +412,468 @@
   "components": {
     "buttons": {
       "variants": {
-        "primary": {"background": "#16803D", "text": "#FFFFFF", "border": "transparent"},
-        "secondary": {"background": "#FFFFFF", "text": "#171717", "border": "#D4D4D4"},
-        "tertiary": {"background": "transparent", "text": "#16803D", "border": "transparent"},
-        "danger": {"background": "#D92D20", "text": "#FFFFFF", "border": "transparent"}
+        "primary": {
+          "background": "design_tokens.color.semantic.action.primary",
+          "text": "design_tokens.color.semantic.text.inverse",
+          "border": "transparent"
+        },
+        "secondary": {
+          "background": "design_tokens.color.semantic.action.secondary",
+          "text": "design_tokens.color.semantic.text.primary",
+          "border": "design_tokens.color.semantic.border.strong"
+        },
+        "tertiary": {
+          "background": "transparent",
+          "text": "design_tokens.color.semantic.text.link",
+          "border": "transparent"
+        },
+        "danger": {
+          "background": "design_tokens.color.semantic.action.danger",
+          "text": "design_tokens.color.semantic.text.inverse",
+          "border": "transparent"
+        }
       },
-      "sizes": {"sm": "36px", "md": "44px", "lg": "52px"},
-      "states": ["default", "hover", "pressed", "focus_visible", "disabled", "loading"],
+      "sizes": {
+        "sm": "36px",
+        "md": "44px",
+        "lg": "52px"
+      },
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "focus_visible",
+        "disabled",
+        "loading"
+      ],
       "rules": [
-        "Primary button is reserved for the main action in a section or flow.",
         "Use one dominant primary action per visual region.",
-        "Show loading state and prevent duplicate submissions during requests."
+        "Use semantic color tokens for all variants.",
+        "Show loading feedback during asynchronous actions.",
+        "Prevent duplicate submission while loading.",
+        "Small controls must retain an interactive hit area of at least 44px where practical."
       ]
     },
-    "inputs": {
+    "form_fields": {
       "height": "44px",
-      "radius": "10px",
-      "background": "#FFFFFF",
-      "border": "1px solid #D4D4D4",
-      "states": ["default", "focus", "filled", "error", "disabled"],
-      "elements": ["label", "control", "helper_text", "error_message"],
+      "radius": "design_tokens.radius.md",
+      "background": "design_tokens.color.semantic.surface.default",
+      "border": "design_tokens.color.semantic.border.default",
+      "types": [
+        "text",
+        "email",
+        "tel",
+        "number",
+        "textarea",
+        "select",
+        "checkbox",
+        "radio"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "filled",
+        "invalid",
+        "disabled",
+        "loading"
+      ],
+      "elements": [
+        "label",
+        "control",
+        "helper_text",
+        "error_message"
+      ],
       "rules": [
-        "Every input has a persistent accessible label.",
-        "Use input types and autocomplete attributes appropriate to the field.",
-        "Show field-level validation close to the relevant input."
+        "Every field must have an accessible persistent label.",
+        "Use suitable input types and autocomplete attributes.",
+        "Show field-level validation close to the relevant input.",
+        "Preserve user input after recoverable errors.",
+        "Use semantic color tokens for validation feedback."
       ]
     },
     "product_card": {
       "layout": "vertical",
       "image_ratio": "1:1",
       "image_fit": "cover",
-      "background": "#FFFFFF",
-      "border": "1px solid #E5E5E5",
-      "radius": "14px",
-      "padding": "8px",
+      "background": "design_tokens.color.semantic.surface.default",
+      "border": "design_tokens.color.semantic.border.default",
+      "radius": "design_tokens.radius.lg",
+      "padding": "design_tokens.spacing.scale.2",
       "elements": [
         "ProductImage",
-        "ProductBadge",
-        "WishlistBtn",
+        "ProductBadge_optional",
+        "WishlistButton",
         "ProductName",
-        "ProductRating",
         "ProductPrice",
         "AvailabilityLabel",
-        "AddToCartBtn_optional"
+        "AddToCartButton_optional"
       ],
       "rules": [
-        "Use consistent image aspect ratios.",
+        "Use consistent product image ratios.",
         "Clamp product name to two lines in compact cards.",
-        "Do not show fabricated ratings, stock, discounts, or badges.",
-        "Show stock separately from purchase availability.",
-        "Keep the primary product image clickable to ProductDetailPage."
+        "Do not display fabricated ratings, stock, discounts, or badges.",
+        "Display availability separately from stock quantity.",
+        "Use backend product data as the source of truth.",
+        "Show an image fallback when product imagery is unavailable."
+      ]
+    },
+    "wishlist_button": {
+      "variants": [
+        "icon_only"
+      ],
+      "states": [
+        "inactive",
+        "active",
+        "hover",
+        "focus_visible",
+        "disabled",
+        "loading"
+      ],
+      "accessibility": {
+        "inactive_label": "Add to wishlist",
+        "active_label": "Remove from wishlist",
+        "must_have_accessible_name": true
+      },
+      "rules": [
+        "Use a consistent heart icon.",
+        "Show a clear active state.",
+        "Prevent duplicate wishlist actions while loading.",
+        "Provide feedback after a successful action."
       ]
     },
     "product_grid": {
-      "columns": {"mobile": 2, "tablet": 3, "desktop": 4},
-      "gap": "12px",
-      "alignment": "stretch"
+      "columns": {
+        "mobile": 2,
+        "tablet": 3,
+        "desktop": 4
+      },
+      "gap": "design_tokens.spacing.scale.3",
+      "alignment": "stretch",
+      "states": [
+        "loading",
+        "loaded",
+        "empty",
+        "error"
+      ]
     },
     "product_gallery": {
       "main_image_ratio": "1:1",
       "thumbnail_size": "64px",
       "image_fit": "contain",
-      "features": ["thumbnail_selection", "image_counter", "swipe_on_mobile"]
+      "features": [
+        "thumbnail_selection",
+        "image_counter",
+        "swipe_on_mobile"
+      ],
+      "states": [
+        "loading",
+        "loaded",
+        "image_error"
+      ],
+      "rules": [
+        "Provide image fallback.",
+        "Keep thumbnail interaction accessible.",
+        "Use a minimum 44px interactive target.",
+        "Zoom and fullscreen are not required for V1."
+      ]
     },
     "price": {
-      "current_price": {"color": "#171717", "weight": 700},
-      "original_price": {"color": "#737373", "decoration": "line-through"},
-      "discount_badge": {"background": "#FFF0E9", "text": "#F15A24"},
+      "current_price": {
+        "color": "design_tokens.color.semantic.text.primary",
+        "weight": 700
+      },
+      "original_price": {
+        "color": "design_tokens.color.semantic.text.secondary",
+        "decoration": "line-through",
+        "optional": true
+      },
+      "discount_badge": {
+        "background": "design_tokens.color.semantic.status.warning.background",
+        "text": "design_tokens.color.semantic.status.warning.foreground",
+        "optional": true
+      },
       "currency": "IDR",
       "format": "Rp with Indonesian thousands separators",
-      "decimal_places": 0
+      "decimal_places": 0,
+      "rules": [
+        "Use backend product price as the source of truth.",
+        "Display discounts only when valid discount data exists.",
+        "Product variants use the same product price in V1.",
+        "Presentation components must not calculate authoritative order totals."
+      ]
     },
     "badges": {
       "availability": {
-        "available": {"background": "#EAF5EE", "text": "#16803D"},
-        "unavailable": {"background": "#FEF0EF", "text": "#D92D20"}
+        "available": {
+          "background": "design_tokens.color.semantic.status.success.background",
+          "text": "design_tokens.color.semantic.status.success.foreground"
+        },
+        "unavailable": {
+          "background": "design_tokens.color.semantic.status.error.background",
+          "text": "design_tokens.color.semantic.status.error.foreground"
+        }
       },
-      "status": ["pending", "paid", "failed", "expired", "processing", "shipped", "delivered", "cancelled", "refund", "problem"]
+      "status_domains": [
+        "order_status",
+        "payment_status",
+        "shipping_status",
+        "refund_status"
+      ],
+      "rules": [
+        "Map labels and visual styles from approved backend status values.",
+        "Do not invent status values in the design system.",
+        "Every status badge must include readable text.",
+        "Do not use color as the only status indicator."
+      ]
     },
     "quantity_stepper": {
-      "height": "40px",
+      "height": "44px",
       "minimum": 1,
-      "controls": ["decrement", "value", "increment"],
-      "rules": ["Disable increment at available stock limit.", "Validate quantity again on the server."]
+      "controls": [
+        "decrement",
+        "value",
+        "increment"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "limit_reached"
+      ],
+      "rules": [
+        "Disable decrement at minimum quantity.",
+        "Disable increment at the displayed available stock limit.",
+        "Validate quantity again on the server.",
+        "Client-side stock is not authoritative."
+      ]
     },
     "search_input": {
       "height": "44px",
-      "radius": "pill",
-      "elements": ["search_icon", "input", "clear_button_optional"],
-      "states": ["idle", "typing", "suggestions", "results", "empty"]
+      "radius": "design_tokens.radius.pill",
+      "elements": [
+        "search_icon",
+        "input",
+        "clear_button_optional"
+      ],
+      "states": [
+        "idle",
+        "typing",
+        "loading",
+        "suggestions",
+        "results",
+        "empty",
+        "error"
+      ]
     },
     "filter_sort": {
-      "presentation_mobile": "BottomDrawer",
-      "presentation_desktop": "popover_or_side_panel",
-      "actions": ["apply", "reset", "close"]
+      "presentation_mobile": "bottom_drawer",
+      "presentation_desktop": "side_panel",
+      "actions": [
+        "apply",
+        "reset",
+        "close"
+      ]
     },
     "cards": {
-      "default": {"background": "#FFFFFF", "border": "1px solid #E5E5E5", "radius": "14px", "padding": "16px"},
-      "interactive": {"hover_shadow": "md", "focus_visible": "brand_border"}
+      "default": {
+        "background": "design_tokens.color.semantic.surface.default",
+        "border": "design_tokens.color.semantic.border.default",
+        "radius": "design_tokens.radius.lg",
+        "padding": "design_tokens.spacing.scale.4"
+      },
+      "interactive": {
+        "hover_shadow": "design_tokens.shadow.md",
+        "focus_visible": "design_tokens.color.semantic.border.focus"
+      }
     },
     "status_badge": {
       "shape": "pill",
       "padding": "4px 8px",
       "font_size": "12px",
-      "must_include_text": True
+      "must_include_text": true
     },
     "timeline": {
       "orientation": "vertical",
-      "elements": ["status_icon", "title", "description_optional", "timestamp"],
-      "current_state_emphasis": "brand_primary"
+      "elements": [
+        "status_icon",
+        "title",
+        "description_optional",
+        "timestamp"
+      ],
+      "states": [
+        "completed",
+        "current",
+        "upcoming",
+        "attention_required"
+      ],
+      "rules": [
+        "Use backend order lifecycle as the source of timeline events.",
+        "Emphasize the current state.",
+        "Do not infer payment success from frontend navigation."
+      ]
     },
-    "empty_state": {
-      "alignment": "center",
-      "elements": ["illustration_optional", "title", "description", "action_optional"]
-    },
-    "loading_state": {
-      "patterns": ["skeleton", "inline_spinner", "button_spinner"],
-      "rules": ["Use skeletons for content-shaped loading.", "Avoid blocking the entire page for local updates."]
-    },
-    "error_state": {
-      "elements": ["icon", "title", "description", "retry_action_optional"],
-      "rules": ["Use actionable and non-technical error copy.", "Do not expose secrets or internal stack traces."]
+    "feedback": {
+      "empty_state": {
+        "alignment": "center",
+        "elements": [
+          "illustration_optional",
+          "title",
+          "description",
+          "action_optional"
+        ]
+      },
+      "loading_state": {
+        "patterns": [
+          "skeleton",
+          "inline_spinner",
+          "button_spinner"
+        ],
+        "rules": [
+          "Use skeletons for content-shaped loading.",
+          "Avoid blocking the entire page for local updates."
+        ]
+      },
+      "error_state": {
+        "elements": [
+          "icon",
+          "title",
+          "description",
+          "retry_action_optional"
+        ],
+        "rules": [
+          "Use actionable non-technical messages.",
+          "Do not expose secrets or internal stack traces.",
+          "Preserve user input after recoverable errors."
+        ]
+      }
     },
     "modal": {
       "desktop_width": "min(480px, calc(100vw - 32px))",
       "mobile_presentation": "near_full_width_dialog",
-      "radius": "20px",
-      "close_on_escape": True,
-      "close_on_backdrop": "only_when_safe"
+      "radius": "design_tokens.radius.xl",
+      "close_on_escape": true,
+      "close_on_backdrop": "only_when_safe",
+      "accessibility": [
+        "focus_trap",
+        "restore_focus_on_close",
+        "accessible_title",
+        "keyboard_navigation"
+      ]
     },
     "bottom_drawer": {
       "mobile_presentation": "bottom_sheet",
-      "top_radius": "20px",
+      "top_radius": "design_tokens.radius.xl",
       "max_height": "85vh",
-      "supports_drag_handle": True,
-      "must_keep_primary_action_visible": True
+      "supports_drag_handle": true,
+      "must_keep_primary_action_visible": true,
+      "rules": [
+        "Respect device safe areas.",
+        "Handle virtual keyboard visibility.",
+        "Prevent background scrolling when open.",
+        "Keep close action accessible."
+      ]
     },
     "quick_view": {
       "mobile_presentation": "bottom_drawer",
       "desktop_presentation": "modal",
-      "content": ["product_image", "product_name", "price", "rating_if_available", "variant_selector", "quantity_stepper", "wishlist_action", "add_to_cart_action", "view_detail_action"]
+      "content": [
+        "product_image",
+        "product_name",
+        "price",
+        "variant_selector",
+        "quantity_stepper",
+        "wishlist_action",
+        "add_to_cart_action",
+        "view_detail_action"
+      ]
     },
     "toast": {
-      "position": {"mobile": "top_center", "desktop": "top_right"},
-      "duration": "short_for_info_and_success",
-      "persistent_for": ["critical_error", "action_required"],
-      "types": ["success", "error", "warning", "info", "loading"]
+      "position": {
+        "mobile": "top_center",
+        "desktop": "top_right"
+      },
+      "types": [
+        "success",
+        "error",
+        "warning",
+        "info",
+        "loading"
+      ],
+      "duration": {
+        "success": "short",
+        "info": "short",
+        "warning": "medium",
+        "error": "persistent_when_action_required",
+        "loading": "until_operation_finishes"
+      },
+      "accessibility": [
+        "screen_reader_announcement",
+        "appropriate_live_region"
+      ]
     }
   },
   "interaction_patterns": {
     "navigation": {
-      "storefront_pages": ["HomePage", "ProductPage", "SearchPage", "WishlistPage", "OrdersPage", "ProfilePage"],
-      "standalone_pages_use_back_navigation": True,
-      "preserve_scroll_position_when_appropriate": True
+      "storefront_pages": [
+        "HomePage",
+        "ProductPage",
+        "SearchPage",
+        "WishlistPage",
+        "OrdersPage",
+        "ProfilePage"
+      ],
+      "standalone_pages_use_back_navigation": true,
+      "preserve_scroll_position_when_appropriate": true
     },
     "add_to_cart": {
-      "sequence": ["validate_product_availability", "validate_variant", "validate_quantity", "update_cart", "show_feedback"],
+      "sequence": [
+        "validate_product_availability",
+        "validate_variant",
+        "validate_quantity",
+        "update_cart",
+        "show_feedback"
+      ],
       "feedback": "toast_and_cart_badge_update"
     },
     "checkout": {
-      "sequence": ["validate_customer", "validate_address", "validate_cart", "validate_stock_server_side", "create_order", "create_payment_invoice"],
-      "guest_mode": True,
-      "shipping_fee_idr": 52000,
-      "shipping_fee_policy": "fixed",
-      "payment_deadline_hours": 24
+      "sequence": [
+        "validate_customer",
+        "validate_address",
+        "validate_cart",
+        "validate_stock_server_side",
+        "create_order",
+        "create_payment_invoice"
+      ],
+      "guest_mode": true,
+      "shipping_fee_source": "backend_defined_per_order",
+      "payment_expiry_source": "verified_duitku_invoice_expiry"
     },
     "payment": {
       "provider": "Duitku POP",
-      "redirect_result_is_authoritative": False,
+      "redirect_result_is_authoritative": false,
       "source_of_truth": "verified_backend_payment_status",
-      "final_status_sources": ["verified_duitku_callback", "server_side_status_verification"],
-      "show_payment_instructions_when_available": True
+      "final_status_sources": [
+        "verified_duitku_callback",
+        "server_side_status_verification"
+      ],
+      "show_payment_instructions_when_available": true
     },
     "order_tracking": {
       "mode": "guest",
       "lookup_key": "order_id",
       "data_exposure": "minimum_necessary_order_information",
-      "never_trust_client_supplied_status": True
+      "never_trust_client_supplied_status": true
     },
     "inventory": {
       "validation": "server_side",
       "reservation_or_deduction": "atomic_backend_operation",
-      "stock_and_availability_are_separate": True
+      "stock_and_availability_are_separate": true
     },
     "forms": {
       "validation": "client_and_server",
-      "prevent_duplicate_submission": True,
-      "preserve_user_input_on_recoverable_errors": True
+      "prevent_duplicate_submission": true,
+      "preserve_user_input_on_recoverable_errors": true
     }
   },
   "accessibility": {
@@ -527,34 +907,215 @@
     ]
   },
   "page_design_patterns": {
-    "HomePage": ["hero_banner", "search", "category_shortcuts", "product_carousels", "promotional_banner", "recently_viewed", "footer"],
-    "ProductPage": ["page_header", "search", "category_chips", "filter_sort", "product_grid", "pagination_or_infinite_scroll"],
-    "CategoriesPage": ["page_header", "category_grid", "selected_category_products"],
-    "SearchPage": ["search_input", "suggestions", "popular_searches", "search_history", "filter_sort", "search_results"],
-    "WishlistPage": ["page_header", "product_grid", "availability_state", "empty_state"],
-    "OrdersPage": ["page_header", "order_search", "status_tabs", "order_cards", "empty_state"],
-    "ProfilePage": ["profile_summary", "customer_information", "account_menu", "help_and_information"],
-    "ProductDetailPage": ["gallery", "product_information", "price", "availability", "variants", "quantity", "description", "specifications", "delivery", "reviews_preview", "questions_preview", "related_products", "sticky_purchase_action"],
-    "ProductReviewsPage": ["rating_summary", "rating_distribution", "filter_sort", "review_list"],
-    "ProductQuestionsPage": ["question_form", "question_list", "answer_list"],
-    "RelatedProductsPage": ["product_context", "filter_sort", "product_grid"],
-    "CartPage": ["cart_items", "selection_controls", "stock_validation", "price_summary", "checkout_action"],
-    "CheckoutPage": ["customer_form", "shipping_address", "order_items", "shipping_summary", "payment_selection", "notes", "price_summary", "terms", "place_order"],
-    "AddressPage": ["address_list", "address_form", "default_address_control"],
-    "ShippingPage": ["recipient", "delivery_address", "shipping_method", "shipping_fee", "delivery_estimate"],
-    "PaymentPage": ["order_information", "payment_summary", "duitku_payment", "payment_instructions", "countdown", "payment_status"],
-    "PaymentReturnPage": ["payment_result", "transaction_information", "verified_payment_status", "order_action", "support"],
-    "OrderDetailPage": ["order_information", "order_status", "payment_status", "shipping_status", "items", "recipient", "shipping", "payment", "price_summary", "timeline", "actions"],
-    "OrderTrackingPage": ["order_lookup", "order_summary", "tracking_status", "timeline", "shipping_information"],
-    "ReturnRefundPage": ["return_policy", "eligible_orders", "product_selection", "reason", "description", "evidence", "refund_information", "request_status", "history"],
-    "NotificationsPage": ["notification_filter", "notification_list", "bulk_actions", "empty_state"],
-    "LiveChatPage": ["chat_header", "conversation", "attachments", "message_composer"],
-    "AboutPage": ["brand_introduction", "story", "vision_mission", "brand_values", "contact", "social_links"],
-    "ContactPage": ["contact_information", "business_hours", "contact_form", "social_links", "location_optional"],
-    "FAQPage": ["faq_search", "faq_categories", "accordion_list", "support_action"],
-    "PoliciesPage": ["policy_navigation", "policy_content", "last_updated"],
-    "SystemPage": ["system_status", "error_information", "network_status", "loading_empty_maintenance_states", "recovery_actions"],
-    "NotFoundPage": ["error_illustration", "error_information", "back_action", "home_action", "search_action", "support"]
+    "HomePage": [
+      "hero_banner",
+      "search",
+      "category_shortcuts",
+      "product_carousels",
+      "promotional_banner",
+      "recently_viewed",
+      "footer"
+    ],
+    "ProductPage": [
+      "page_header",
+      "search",
+      "category_chips",
+      "filter_sort",
+      "product_grid",
+      "pagination_or_infinite_scroll"
+    ],
+    "CategoriesPage": [
+      "page_header",
+      "category_grid",
+      "selected_category_products"
+    ],
+    "SearchPage": [
+      "search_input",
+      "suggestions",
+      "popular_searches",
+      "search_history",
+      "filter_sort",
+      "search_results"
+    ],
+    "WishlistPage": [
+      "page_header",
+      "product_grid",
+      "availability_state",
+      "empty_state"
+    ],
+    "OrdersPage": [
+      "page_header",
+      "order_search",
+      "status_tabs",
+      "order_cards",
+      "empty_state"
+    ],
+    "ProfilePage": [
+      "profile_summary",
+      "customer_information",
+      "account_menu",
+      "help_and_information"
+    ],
+    "ProductDetailPage": [
+      "gallery",
+      "product_information",
+      "price",
+      "availability",
+      "variants",
+      "quantity",
+      "description",
+      "specifications",
+      "delivery",
+      "reviews_preview",
+      "questions_preview",
+      "related_products",
+      "sticky_purchase_action"
+    ],
+    "ProductReviewsPage": [
+      "rating_summary",
+      "rating_distribution",
+      "filter_sort",
+      "review_list"
+    ],
+    "ProductQuestionsPage": [
+      "question_form",
+      "question_list",
+      "answer_list"
+    ],
+    "RelatedProductsPage": [
+      "product_context",
+      "filter_sort",
+      "product_grid"
+    ],
+    "CartPage": [
+      "cart_items",
+      "selection_controls",
+      "stock_validation",
+      "price_summary",
+      "checkout_action"
+    ],
+    "CheckoutPage": [
+      "customer_form",
+      "shipping_address",
+      "order_items",
+      "shipping_summary",
+      "payment_selection",
+      "notes",
+      "price_summary",
+      "terms",
+      "place_order"
+    ],
+    "AddressPage": [
+      "address_list",
+      "address_form",
+      "default_address_control"
+    ],
+    "ShippingPage": [
+      "recipient",
+      "delivery_address",
+      "shipping_method",
+      "shipping_fee",
+      "delivery_estimate"
+    ],
+    "PaymentPage": [
+      "order_information",
+      "payment_summary",
+      "duitku_payment",
+      "payment_instructions",
+      "countdown",
+      "payment_status"
+    ],
+    "PaymentReturnPage": [
+      "payment_result",
+      "transaction_information",
+      "verified_payment_status",
+      "order_action",
+      "support"
+    ],
+    "OrderDetailPage": [
+      "order_information",
+      "order_status",
+      "payment_status",
+      "shipping_status",
+      "items",
+      "recipient",
+      "shipping",
+      "payment",
+      "price_summary",
+      "timeline",
+      "actions"
+    ],
+    "OrderTrackingPage": [
+      "order_lookup",
+      "order_summary",
+      "tracking_status",
+      "timeline",
+      "shipping_information"
+    ],
+    "ReturnRefundPage": [
+      "return_policy",
+      "eligible_orders",
+      "product_selection",
+      "reason",
+      "description",
+      "evidence",
+      "refund_information",
+      "request_status",
+      "history"
+    ],
+    "NotificationsPage": [
+      "notification_filter",
+      "notification_list",
+      "bulk_actions",
+      "empty_state"
+    ],
+    "LiveChatPage": [
+      "chat_header",
+      "conversation",
+      "attachments",
+      "message_composer"
+    ],
+    "AboutPage": [
+      "brand_introduction",
+      "story",
+      "vision_mission",
+      "brand_values",
+      "contact",
+      "social_links"
+    ],
+    "ContactPage": [
+      "contact_information",
+      "business_hours",
+      "contact_form",
+      "social_links",
+      "location_optional"
+    ],
+    "FAQPage": [
+      "faq_search",
+      "faq_categories",
+      "accordion_list",
+      "support_action"
+    ],
+    "PoliciesPage": [
+      "policy_navigation",
+      "policy_content",
+      "last_updated"
+    ],
+    "SystemPage": [
+      "system_status",
+      "error_information",
+      "network_status",
+      "loading_empty_maintenance_states",
+      "recovery_actions"
+    ],
+    "NotFoundPage": [
+      "error_illustration",
+      "error_information",
+      "back_action",
+      "home_action",
+      "search_action",
+      "support"
+    ]
   },
   "implementation_notes": {
     "styling": "Implement tokens as CSS variables and map them to Tailwind theme configuration where appropriate.",
@@ -574,6 +1135,8 @@
       "Unapproved voucher or coupon business rules",
       "Unapproved variable shipping rates",
       "Unapproved standalone OrderSuccessPage"
-    ]
+    ],
+    "token_reference_format": "<category>.<token_path>",
+    "wishlist_persistence": "Not specified by the design system; must follow a separately approved guest wishlist requirement."
   }
 }
