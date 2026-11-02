@@ -1,0 +1,579 @@
+{
+    "name": "ASRI COLLECTION Design System",
+    "file": "design_system.json",
+    "version": "1.0.0",
+    "status": "draft",
+    "product": "ASRI COLLECTION",
+    "type": "ecommerce_storefront",
+    "platform": ["web", "mobile", "tablet", "desktop"],
+    "framework": ["React", "TypeScript", "Vite"],
+    "principles": [
+      "mobile_first",
+      "responsive",
+      "minimal_modern",
+      "reusable_components",
+      "accessible",
+      "performance_aware",
+      "guest_checkout",
+      "backend_driven_state"
+    ],
+    "scope": "Customer-facing storefront only. No admin dashboard, login page, or registration page.",
+    "source_requirements": "ASRI COLLECTION — PAGE REQUIREMENTS V1.0"
+  },
+  "brand": {
+    "name": "ASRI COLLECTION",
+    "personality": ["modern", "minimal", "elegant", "approachable", "reliable"],
+    "visual_direction": "Modern minimalist ecommerce storefront with generous whitespace, clear product photography, restrained emerald accents, dark typography, and high-contrast purchase actions.",
+    "logo": {
+      "placement": "header",
+      "preferred_variant": "wordmark",
+      "clear_space": "at_least_logo_mark_height",
+      "minimum_size": "preserve_legibility",
+      "fallback": "text_wordmark"
+    }
+  },
+  "design_tokens": {
+    "color": {
+      "brand": {
+        "primary": "#16803D",
+        "primary_hover": "#116B32",
+        "primary_pressed": "#0D5728",
+        "primary_soft": "#EAF5EE",
+        "secondary": "#F15A24",
+        "secondary_soft": "#FFF0E9"
+      },
+      "neutral": {
+        "white": "#FFFFFF",
+        "black": "#111111",
+        "gray_950": "#171717",
+        "gray_900": "#262626",
+        "gray_800": "#404040",
+        "gray_700": "#525252",
+        "gray_600": "#737373",
+        "gray_500": "#8A8A8A",
+        "gray_400": "#A3A3A3",
+        "gray_300": "#D4D4D4",
+        "gray_200": "#E5E5E5",
+        "gray_100": "#F5F5F5",
+        "gray_50": "#FAFAFA"
+      },
+      "semantic": {
+        "success": "#16803D",
+        "success_background": "#EAF5EE",
+        "warning": "#B7791F",
+        "warning_background": "#FFF7E6",
+        "error": "#D92D20",
+        "error_background": "#FEF0EF",
+        "info": "#2563EB",
+        "info_background": "#EFF6FF"
+      },
+      "text": {
+        "primary": "#171717",
+        "secondary": "#525252",
+        "muted": "#737373",
+        "inverse": "#FFFFFF",
+        "link": "#16803D",
+        "disabled": "#A3A3A3"
+      },
+      "surface": {
+        "page": "#FFFFFF",
+        "default": "#FFFFFF",
+        "subtle": "#FAFAFA",
+        "muted": "#F5F5F5",
+        "raised": "#FFFFFF",
+        "overlay": "rgba(17, 17, 17, 0.48)"
+      },
+      "border": {
+        "default": "#E5E5E5",
+        "strong": "#D4D4D4",
+        "focus": "#16803D",
+        "error": "#D92D20"
+      },
+      "usage_rules": [
+        "Use primary emerald for primary actions, selected states, links, and key brand accents.",
+        "Use secondary orange sparingly for promotional emphasis and campaign highlights.",
+        "Use neutral colors for most surfaces, typography, separators, and product layouts.",
+        "Do not use color alone to communicate status; pair color with text or an icon.",
+        "Maintain WCAG AA contrast for normal text and interactive controls."
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "sans": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+        "display": "Inter, ui-sans-serif, system-ui, sans-serif"
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "scale": {
+        "display": {"font_size": "32px", "line_height": 1.2, "weight": 700},
+        "h1": {"font_size": "28px", "line_height": 1.25, "weight": 700},
+        "h2": {"font_size": "24px", "line_height": 1.3, "weight": 600},
+        "h3": {"font_size": "20px", "line_height": 1.35, "weight": 600},
+        "h4": {"font_size": "18px", "line_height": 1.4, "weight": 600},
+        "body_lg": {"font_size": "16px", "line_height": 1.5, "weight": 400},
+        "body": {"font_size": "14px", "line_height": 1.5, "weight": 400},
+        "body_sm": {"font_size": "13px", "line_height": 1.45, "weight": 400},
+        "caption": {"font_size": "12px", "line_height": 1.4, "weight": 400},
+        "overline": {"font_size": "11px", "line_height": 1.35, "weight": 600, "letter_spacing": "0.06em"}
+      },
+      "rules": [
+        "Use sentence case for labels and headings.",
+        "Use tabular numerals for prices, quantities, and order identifiers where supported.",
+        "Keep product names readable and clamp card titles consistently.",
+        "Avoid using more than three text sizes within a compact component."
+      ]
+    },
+    "spacing": {
+      "base_unit": 4,
+      "scale": {
+        "0": "0px",
+        "1": "4px",
+        "2": "8px",
+        "3": "12px",
+        "4": "16px",
+        "5": "20px",
+        "6": "24px",
+        "8": "32px",
+        "10": "40px",
+        "12": "48px",
+        "16": "64px",
+        "20": "80px"
+      },
+      "page_gutter": {
+        "mobile": "16px",
+        "tablet": "24px",
+        "desktop": "32px"
+      },
+      "section_gap": {
+        "mobile": "24px",
+        "tablet": "32px",
+        "desktop": "40px"
+      },
+      "component_gap": "8px"
+    },
+    "sizing": {
+      "control_height": {
+        "sm": "36px",
+        "md": "44px",
+        "lg": "52px"
+      },
+      "icon_size": {
+        "xs": "14px",
+        "sm": "16px",
+        "md": "20px",
+        "lg": "24px",
+        "xl": "32px"
+      },
+      "content_max_width": "1200px",
+      "product_image_aspect_ratio": "1:1",
+      "hero_aspect_ratio": "16:9",
+      "touch_target_minimum": "44px"
+    },
+    "radius": {
+      "none": "0px",
+      "xs": "4px",
+      "sm": "6px",
+      "md": "10px",
+      "lg": "14px",
+      "xl": "20px",
+      "2xl": "24px",
+      "pill": "9999px"
+    },
+    "border": {
+      "width": "1px",
+      "style": "solid",
+      "default": "1px solid #E5E5E5",
+      "focus": "2px solid #16803D"
+    },
+    "shadow": {
+      "none": "none",
+      "sm": "0 1px 2px rgba(0,0,0,0.05)",
+      "md": "0 4px 12px rgba(0,0,0,0.08)",
+      "lg": "0 12px 32px rgba(0,0,0,0.12)",
+      "overlay": "0 16px 48px rgba(0,0,0,0.18)"
+    },
+    "motion": {
+      "duration_fast": "120ms",
+      "duration_normal": "200ms",
+      "duration_slow": "300ms",
+      "easing_standard": "cubic-bezier(0.2, 0, 0, 1)",
+      "rules": [
+        "Prefer subtle transitions for hover, focus, drawer, modal, and toast.",
+        "Respect prefers-reduced-motion.",
+        "Do not animate layout changes that delay checkout or purchase actions."
+      ]
+    },
+    "z_index": {
+      "base": 0,
+      "sticky": 10,
+      "header": 20,
+      "drawer_backdrop": 40,
+      "drawer": 50,
+      "modal_backdrop": 60,
+      "modal": 70,
+      "toast": 80
+    }
+  },
+  "responsive": {
+    "strategy": "mobile_first",
+    "breakpoints": {
+      "xs": "0px",
+      "sm": "480px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px"
+    },
+    "layouts": {
+      "mobile": {
+        "page_gutter": "16px",
+        "product_grid_columns": 2,
+        "content_width": "100%",
+        "navigation": "compact_header_and_contextual_navigation",
+        "sticky_purchase_bar": True
+      },
+      "tablet": {
+        "page_gutter": "24px",
+        "product_grid_columns": 3,
+        "content_width": "100%",
+        "navigation": "expanded_header"
+      },
+      "desktop": {
+        "page_gutter": "32px",
+        "product_grid_columns": 4,
+        "content_width": "min(100% - 64px, 1200px)",
+        "navigation": "expanded_header"
+      }
+    },
+    "rules": [
+      "Design and validate mobile layouts first.",
+      "Prevent horizontal overflow at every breakpoint.",
+      "Use responsive grids for product listings.",
+      "Keep checkout actions visible and reachable on small screens.",
+      "On desktop, center the storefront within the maximum content width."
+    ]
+  },
+  "layout": {
+    "app_shell": {
+      "header": {
+        "height": {"mobile": "56px", "desktop": "68px"},
+        "position": "sticky",
+        "background": "#FFFFFF",
+        "border_bottom": "1px solid #E5E5E5",
+        "elements": ["AppLogo", "CartBtn", "ProfileBtn"],
+        "rules": [
+          "Keep the logo visually dominant but compact.",
+          "CartBtn displays a count badge when cart quantity is greater than zero.",
+          "Header actions use accessible labels and minimum 44px touch targets."
+        ]
+      },
+      "main": {
+        "container": "responsive",
+        "max_width": "1200px",
+        "page_transition": "subtle_or_none",
+        "route_management": "React Router"
+      },
+      "footer": {
+        "background": "#FAFAFA",
+        "sections": ["store_information", "help_links", "policies", "social_links"]
+      }
+    },
+    "page_templates": {
+      "storefront": {
+        "header": "AppShell.Header",
+        "main": "AppShell.Main",
+        "content_width": "responsive",
+        "bottom_navigation": "not_assumed_by_this_baseline"
+      },
+      "standalone": {
+        "header": "contextual_page_header",
+        "main": "standalone_content",
+        "show_back_button": True,
+        "content_width": "responsive"
+      },
+      "supporting": {
+        "header": "contextual_page_header",
+        "main": "support_content"
+      },
+      "system": {
+        "layout": "focused_centered_state",
+        "main": "system_feedback_content"
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "variants": {
+        "primary": {"background": "#16803D", "text": "#FFFFFF", "border": "transparent"},
+        "secondary": {"background": "#FFFFFF", "text": "#171717", "border": "#D4D4D4"},
+        "tertiary": {"background": "transparent", "text": "#16803D", "border": "transparent"},
+        "danger": {"background": "#D92D20", "text": "#FFFFFF", "border": "transparent"}
+      },
+      "sizes": {"sm": "36px", "md": "44px", "lg": "52px"},
+      "states": ["default", "hover", "pressed", "focus_visible", "disabled", "loading"],
+      "rules": [
+        "Primary button is reserved for the main action in a section or flow.",
+        "Use one dominant primary action per visual region.",
+        "Show loading state and prevent duplicate submissions during requests."
+      ]
+    },
+    "inputs": {
+      "height": "44px",
+      "radius": "10px",
+      "background": "#FFFFFF",
+      "border": "1px solid #D4D4D4",
+      "states": ["default", "focus", "filled", "error", "disabled"],
+      "elements": ["label", "control", "helper_text", "error_message"],
+      "rules": [
+        "Every input has a persistent accessible label.",
+        "Use input types and autocomplete attributes appropriate to the field.",
+        "Show field-level validation close to the relevant input."
+      ]
+    },
+    "product_card": {
+      "layout": "vertical",
+      "image_ratio": "1:1",
+      "image_fit": "cover",
+      "background": "#FFFFFF",
+      "border": "1px solid #E5E5E5",
+      "radius": "14px",
+      "padding": "8px",
+      "elements": [
+        "ProductImage",
+        "ProductBadge",
+        "WishlistBtn",
+        "ProductName",
+        "ProductRating",
+        "ProductPrice",
+        "AvailabilityLabel",
+        "AddToCartBtn_optional"
+      ],
+      "rules": [
+        "Use consistent image aspect ratios.",
+        "Clamp product name to two lines in compact cards.",
+        "Do not show fabricated ratings, stock, discounts, or badges.",
+        "Show stock separately from purchase availability.",
+        "Keep the primary product image clickable to ProductDetailPage."
+      ]
+    },
+    "product_grid": {
+      "columns": {"mobile": 2, "tablet": 3, "desktop": 4},
+      "gap": "12px",
+      "alignment": "stretch"
+    },
+    "product_gallery": {
+      "main_image_ratio": "1:1",
+      "thumbnail_size": "64px",
+      "image_fit": "contain",
+      "features": ["thumbnail_selection", "image_counter", "swipe_on_mobile"]
+    },
+    "price": {
+      "current_price": {"color": "#171717", "weight": 700},
+      "original_price": {"color": "#737373", "decoration": "line-through"},
+      "discount_badge": {"background": "#FFF0E9", "text": "#F15A24"},
+      "currency": "IDR",
+      "format": "Rp with Indonesian thousands separators",
+      "decimal_places": 0
+    },
+    "badges": {
+      "availability": {
+        "available": {"background": "#EAF5EE", "text": "#16803D"},
+        "unavailable": {"background": "#FEF0EF", "text": "#D92D20"}
+      },
+      "status": ["pending", "paid", "failed", "expired", "processing", "shipped", "delivered", "cancelled", "refund", "problem"]
+    },
+    "quantity_stepper": {
+      "height": "40px",
+      "minimum": 1,
+      "controls": ["decrement", "value", "increment"],
+      "rules": ["Disable increment at available stock limit.", "Validate quantity again on the server."]
+    },
+    "search_input": {
+      "height": "44px",
+      "radius": "pill",
+      "elements": ["search_icon", "input", "clear_button_optional"],
+      "states": ["idle", "typing", "suggestions", "results", "empty"]
+    },
+    "filter_sort": {
+      "presentation_mobile": "BottomDrawer",
+      "presentation_desktop": "popover_or_side_panel",
+      "actions": ["apply", "reset", "close"]
+    },
+    "cards": {
+      "default": {"background": "#FFFFFF", "border": "1px solid #E5E5E5", "radius": "14px", "padding": "16px"},
+      "interactive": {"hover_shadow": "md", "focus_visible": "brand_border"}
+    },
+    "status_badge": {
+      "shape": "pill",
+      "padding": "4px 8px",
+      "font_size": "12px",
+      "must_include_text": True
+    },
+    "timeline": {
+      "orientation": "vertical",
+      "elements": ["status_icon", "title", "description_optional", "timestamp"],
+      "current_state_emphasis": "brand_primary"
+    },
+    "empty_state": {
+      "alignment": "center",
+      "elements": ["illustration_optional", "title", "description", "action_optional"]
+    },
+    "loading_state": {
+      "patterns": ["skeleton", "inline_spinner", "button_spinner"],
+      "rules": ["Use skeletons for content-shaped loading.", "Avoid blocking the entire page for local updates."]
+    },
+    "error_state": {
+      "elements": ["icon", "title", "description", "retry_action_optional"],
+      "rules": ["Use actionable and non-technical error copy.", "Do not expose secrets or internal stack traces."]
+    },
+    "modal": {
+      "desktop_width": "min(480px, calc(100vw - 32px))",
+      "mobile_presentation": "near_full_width_dialog",
+      "radius": "20px",
+      "close_on_escape": True,
+      "close_on_backdrop": "only_when_safe"
+    },
+    "bottom_drawer": {
+      "mobile_presentation": "bottom_sheet",
+      "top_radius": "20px",
+      "max_height": "85vh",
+      "supports_drag_handle": True,
+      "must_keep_primary_action_visible": True
+    },
+    "quick_view": {
+      "mobile_presentation": "bottom_drawer",
+      "desktop_presentation": "modal",
+      "content": ["product_image", "product_name", "price", "rating_if_available", "variant_selector", "quantity_stepper", "wishlist_action", "add_to_cart_action", "view_detail_action"]
+    },
+    "toast": {
+      "position": {"mobile": "top_center", "desktop": "top_right"},
+      "duration": "short_for_info_and_success",
+      "persistent_for": ["critical_error", "action_required"],
+      "types": ["success", "error", "warning", "info", "loading"]
+    }
+  },
+  "interaction_patterns": {
+    "navigation": {
+      "storefront_pages": ["HomePage", "ProductPage", "SearchPage", "WishlistPage", "OrdersPage", "ProfilePage"],
+      "standalone_pages_use_back_navigation": True,
+      "preserve_scroll_position_when_appropriate": True
+    },
+    "add_to_cart": {
+      "sequence": ["validate_product_availability", "validate_variant", "validate_quantity", "update_cart", "show_feedback"],
+      "feedback": "toast_and_cart_badge_update"
+    },
+    "checkout": {
+      "sequence": ["validate_customer", "validate_address", "validate_cart", "validate_stock_server_side", "create_order", "create_payment_invoice"],
+      "guest_mode": True,
+      "shipping_fee_idr": 52000,
+      "shipping_fee_policy": "fixed",
+      "payment_deadline_hours": 24
+    },
+    "payment": {
+      "provider": "Duitku POP",
+      "redirect_result_is_authoritative": False,
+      "source_of_truth": "verified_backend_payment_status",
+      "final_status_sources": ["verified_duitku_callback", "server_side_status_verification"],
+      "show_payment_instructions_when_available": True
+    },
+    "order_tracking": {
+      "mode": "guest",
+      "lookup_key": "order_id",
+      "data_exposure": "minimum_necessary_order_information",
+      "never_trust_client_supplied_status": True
+    },
+    "inventory": {
+      "validation": "server_side",
+      "reservation_or_deduction": "atomic_backend_operation",
+      "stock_and_availability_are_separate": True
+    },
+    "forms": {
+      "validation": "client_and_server",
+      "prevent_duplicate_submission": True,
+      "preserve_user_input_on_recoverable_errors": True
+    }
+  },
+  "accessibility": {
+    "target_standard": "WCAG 2.2 AA",
+    "requirements": [
+      "Semantic HTML landmarks and headings.",
+      "Keyboard access for all interactive controls.",
+      "Visible focus indicators.",
+      "Accessible names for icon-only buttons.",
+      "Sufficient text and control contrast.",
+      "Touch targets at least 44 by 44 pixels where practical.",
+      "Associate form labels, helper text, and errors programmatically.",
+      "Announce important asynchronous status changes to assistive technology.",
+      "Respect reduced-motion preferences.",
+      "Do not rely on color alone for status."
+    ]
+  },
+  "content_guidelines": {
+    "language_default": "id-ID",
+    "tone": "clear, friendly, concise, trustworthy",
+    "currency": "IDR",
+    "price_format_example": "Rp125.000",
+    "date_format": "DD MMM YYYY",
+    "empty_state_copy": "Explain what is missing and provide a relevant next action.",
+    "error_copy": "Explain the issue in plain language and state what the customer can do next.",
+    "rules": [
+      "Use consistent Indonesian terminology across the storefront.",
+      "Keep CTA labels action-oriented.",
+      "Do not use placeholder content in production.",
+      "Do not invent product attributes, ratings, stock, shipping estimates, or payment statuses."
+    ]
+  },
+  "page_design_patterns": {
+    "HomePage": ["hero_banner", "search", "category_shortcuts", "product_carousels", "promotional_banner", "recently_viewed", "footer"],
+    "ProductPage": ["page_header", "search", "category_chips", "filter_sort", "product_grid", "pagination_or_infinite_scroll"],
+    "CategoriesPage": ["page_header", "category_grid", "selected_category_products"],
+    "SearchPage": ["search_input", "suggestions", "popular_searches", "search_history", "filter_sort", "search_results"],
+    "WishlistPage": ["page_header", "product_grid", "availability_state", "empty_state"],
+    "OrdersPage": ["page_header", "order_search", "status_tabs", "order_cards", "empty_state"],
+    "ProfilePage": ["profile_summary", "customer_information", "account_menu", "help_and_information"],
+    "ProductDetailPage": ["gallery", "product_information", "price", "availability", "variants", "quantity", "description", "specifications", "delivery", "reviews_preview", "questions_preview", "related_products", "sticky_purchase_action"],
+    "ProductReviewsPage": ["rating_summary", "rating_distribution", "filter_sort", "review_list"],
+    "ProductQuestionsPage": ["question_form", "question_list", "answer_list"],
+    "RelatedProductsPage": ["product_context", "filter_sort", "product_grid"],
+    "CartPage": ["cart_items", "selection_controls", "stock_validation", "price_summary", "checkout_action"],
+    "CheckoutPage": ["customer_form", "shipping_address", "order_items", "shipping_summary", "payment_selection", "notes", "price_summary", "terms", "place_order"],
+    "AddressPage": ["address_list", "address_form", "default_address_control"],
+    "ShippingPage": ["recipient", "delivery_address", "shipping_method", "shipping_fee", "delivery_estimate"],
+    "PaymentPage": ["order_information", "payment_summary", "duitku_payment", "payment_instructions", "countdown", "payment_status"],
+    "PaymentReturnPage": ["payment_result", "transaction_information", "verified_payment_status", "order_action", "support"],
+    "OrderDetailPage": ["order_information", "order_status", "payment_status", "shipping_status", "items", "recipient", "shipping", "payment", "price_summary", "timeline", "actions"],
+    "OrderTrackingPage": ["order_lookup", "order_summary", "tracking_status", "timeline", "shipping_information"],
+    "ReturnRefundPage": ["return_policy", "eligible_orders", "product_selection", "reason", "description", "evidence", "refund_information", "request_status", "history"],
+    "NotificationsPage": ["notification_filter", "notification_list", "bulk_actions", "empty_state"],
+    "LiveChatPage": ["chat_header", "conversation", "attachments", "message_composer"],
+    "AboutPage": ["brand_introduction", "story", "vision_mission", "brand_values", "contact", "social_links"],
+    "ContactPage": ["contact_information", "business_hours", "contact_form", "social_links", "location_optional"],
+    "FAQPage": ["faq_search", "faq_categories", "accordion_list", "support_action"],
+    "PoliciesPage": ["policy_navigation", "policy_content", "last_updated"],
+    "SystemPage": ["system_status", "error_information", "network_status", "loading_empty_maintenance_states", "recovery_actions"],
+    "NotFoundPage": ["error_illustration", "error_information", "back_action", "home_action", "search_action", "support"]
+  },
+  "implementation_notes": {
+    "styling": "Implement tokens as CSS variables and map them to Tailwind theme configuration where appropriate.",
+    "component_architecture": "Build shared primitives first, then composed commerce components, then page-specific sections.",
+    "data_contract": "UI must render only fields returned by the approved backend contract; handle optional and missing fields explicitly.",
+    "state_management": "Keep transient UI state local; use shared application state for cart, wishlist, and cross-page state.",
+    "routing": "Use React Router for route definitions, route parameters, not-found handling, and navigation.",
+    "security": [
+      "Never expose Supabase service-role credentials or Duitku secrets in the browser.",
+      "Treat browser redirect parameters as untrusted.",
+      "Validate prices, quantities, stock, order ownership/access, and payment state on the backend.",
+      "Do not expose unnecessary customer or recipient information in guest tracking."
+    ],
+    "out_of_scope": [
+      "Admin dashboard",
+      "Customer login and registration",
+      "Unapproved voucher or coupon business rules",
+      "Unapproved variable shipping rates",
+      "Unapproved standalone OrderSuccessPage"
+    ]
+  }
+}
